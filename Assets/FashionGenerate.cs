@@ -42,6 +42,7 @@ public class FashionGenerate : MonoBehaviour
     void style()
     {
         styles = new bool[toggles.Length];
+        // can we add something here to adjust the amount of 
         for(int i = 0; i < toggles.Length; i++){
             styles[i] = false;
             int index = i;

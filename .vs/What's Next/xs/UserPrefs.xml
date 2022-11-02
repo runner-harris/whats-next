@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{9D9E3FC6-F358-67E4-92AD-ED6020B636D2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FashionGenerate.cs">
+    <Files>
+      <File FileName="Assets/FashionGenerate.cs" Line="45" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="What's Next" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="FashionGenerate.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9cd7d973-07a9-42ff-9285-c325f534d754" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
