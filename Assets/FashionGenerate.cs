@@ -82,5 +82,29 @@ public class FashionGenerate : MonoBehaviour
     {
         styleTextHolder.text = "Under Construction...";
     }
+
+    public void grabOutfit() {
+        if (gender == "masculine")
+        {
+            // code that eliminates styles classified as feminine- women's tops, also more generally skirts, dresses
+            // try catch for styles? maybe kept within a for loop so we can iterate through the
+            // stylechoicesarray and enable certain styles
+            // maybe we have an array of clothing items for each style choice that we can add to
+            // an array of total potential styles for that user- then if they want to regenerate a look
+            // if their preferences are the same we can just randomize again.
+            // the other thing to consider is some sort of styling functionality- like based on each item
+            // generated, certain other things would be disqualified based on wearability
+            // ex. if dress generated, no pants generated as well
+        }
+        else if (gender == "feminine")
+        {
+            //code that eliminates styles classified as masculine- really just gendered versions of clothing from whatever site we pull from
+        }
+        else {
+            // this would be the androgynous option- since we will likely pull from both pools of clothing
+            // also may want to implement something that guarantees a look that is not entirely masc or fem
+
+        }
+    }
  
 }
