@@ -495,23 +495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8965c120496a3b3409b3df93a43a3cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seasonDropdown: {fileID: 0}
-  genderSelect: {fileID: 0}
-  toggles:
-  - {fileID: 1352379533}
-  - {fileID: 632049321}
-  - {fileID: 1029100485}
-  - {fileID: 1168707434}
-  - {fileID: 1022546993}
-  - {fileID: 291433230}
-  - {fileID: 2100300055}
-  - {fileID: 2142301623}
-  - {fileID: 2051367605}
-  - {fileID: 556523502}
-  - {fileID: 1381381541}
-  - {fileID: 530163887}
-  styleTextHolder: {fileID: 1297444623}
-  backgroundInfoTextHolder: {fileID: 0}
 --- !u!114 &247422898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3343,23 +3326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8965c120496a3b3409b3df93a43a3cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seasonDropdown: {fileID: 1749542815}
-  genderSelect: {fileID: 957135697}
-  toggles:
-  - {fileID: 1352379533}
-  - {fileID: 632049321}
-  - {fileID: 1029100485}
-  - {fileID: 1168707434}
-  - {fileID: 1022546993}
-  - {fileID: 291433230}
-  - {fileID: 2100300055}
-  - {fileID: 2142301623}
-  - {fileID: 2051367605}
-  - {fileID: 556523502}
-  - {fileID: 1381381541}
-  - {fileID: 530163887}
-  styleTextHolder: {fileID: 1297444623}
-  backgroundInfoTextHolder: {fileID: 0}
 --- !u!20 &845158369 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: -1853094968961178454, guid: 9a00fd32d7d8044df9a4f9121cc5d6d8, type: 3}
@@ -4989,23 +4955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8965c120496a3b3409b3df93a43a3cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seasonDropdown: {fileID: 0}
-  genderSelect: {fileID: 0}
-  toggles:
-  - {fileID: 1352379533}
-  - {fileID: 632049321}
-  - {fileID: 1029100485}
-  - {fileID: 1168707434}
-  - {fileID: 1022546993}
-  - {fileID: 291433230}
-  - {fileID: 2100300055}
-  - {fileID: 2142301623}
-  - {fileID: 2051367605}
-  - {fileID: 556523502}
-  - {fileID: 1381381541}
-  - {fileID: 530163887}
-  styleTextHolder: {fileID: 1297444623}
-  backgroundInfoTextHolder: {fileID: 0}
 --- !u!114 &1176512948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5722,23 +5671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8965c120496a3b3409b3df93a43a3cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seasonDropdown: {fileID: 0}
-  genderSelect: {fileID: 0}
-  toggles:
-  - {fileID: 1352379533}
-  - {fileID: 632049321}
-  - {fileID: 1029100485}
-  - {fileID: 1168707434}
-  - {fileID: 1022546993}
-  - {fileID: 291433230}
-  - {fileID: 2100300055}
-  - {fileID: 2142301623}
-  - {fileID: 2051367605}
-  - {fileID: 556523502}
-  - {fileID: 1381381541}
-  - {fileID: 530163887}
-  styleTextHolder: {fileID: 0}
-  backgroundInfoTextHolder: {fileID: 0}
 --- !u!4 &1283924219
 Transform:
   m_ObjectHideFlags: 0
@@ -6361,17 +6293,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 987647056511194327, guid: 13b8efbb6cf46494c89847fddc428e9c, type: 3}
   m_PrefabInstance: {fileID: 987647055160997979}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1352379533 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 987647056511194326, guid: 13b8efbb6cf46494c89847fddc428e9c, type: 3}
-  m_PrefabInstance: {fileID: 987647055160997979}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1381381539
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,7 +7323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: b31da64f86a144f48a450f2ee5dd0888, type: 3}
   m_Color: {r: 1, g: 0.9292453, b: 0.9292453, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8363,23 +8284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8965c120496a3b3409b3df93a43a3cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seasonDropdown: {fileID: 0}
-  genderSelect: {fileID: 0}
-  toggles:
-  - {fileID: 1352379533}
-  - {fileID: 632049321}
-  - {fileID: 1029100485}
-  - {fileID: 1168707434}
-  - {fileID: 1022546993}
-  - {fileID: 291433230}
-  - {fileID: 2100300055}
-  - {fileID: 2142301623}
-  - {fileID: 2051367605}
-  - {fileID: 556523502}
-  - {fileID: 1381381541}
-  - {fileID: 530163887}
-  styleTextHolder: {fileID: 1297444623}
-  backgroundInfoTextHolder: {fileID: 0}
 --- !u!1 &2100300053
 GameObject:
   m_ObjectHideFlags: 0
