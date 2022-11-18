@@ -6,12 +6,24 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class MainButtonHandler : MonoBehaviour
+public class MainButtonHandler : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject txt;
-    
-    public void OnPointerEnter(PointerEventData eventData) {
-        txt.GetComponent<TextMeshPro>().color = Color.red;
+    private bool mouse_over = false;
 
+    public void OnPointerEnter(PointerEventData eventData) {
+        mouse_over = true;
     }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        mouse_over = false;
+    }
+
+    void Update() {
+        if (mouse_over) {
+            txt.transform.Translate(new Vector3(10, 0));
+        }
+    }
+
 }
