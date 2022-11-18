@@ -22,6 +22,10 @@ public class FashionGenerate : MonoBehaviour
     string[] styleChoicesArray = new string[]{"retro", "emo", "preppy", "3", "4", "5", "6", "7", "8", "9", "10", "11"};
     string styleChoices = "";
 
+    public GameObject top;
+    public GameObject bottom;
+    public GameObject shoes;
+
 
     public void setSeason()
     {
@@ -106,5 +110,76 @@ public class FashionGenerate : MonoBehaviour
 
         }
     }
+
+ /*   public void generate()
+    {
+        switch (gender)
+        {
+            case "feminine":
+                generateFemaleStyles();
+                break;
+            case "masculine":
+                generateMaleStyles();
+                break;
+            case "androgynous":
+                generateAndrogynousStyles();
+                break;
+        }
+
+    }
+    public void generateFemaleStyles()
+    {
+        switch (season)
+        {
+            case "winter":
+                generateFemWinter();
+                break;
+            case "spring":
+                generateFemSpring();
+                break;
+            case "fall":
+                generateFemFall();
+                break;
+            case "summer":
+                generateFemSummer();
+                break;
+        }
+    }
+    public void generateMaleStyles()
+    {
+        switch (season)
+        {
+            case "winter":
+                generateMaleWinter();
+                break;
+            case "spring":
+                generateMaleSpring();
+                break;
+            case "summer":
+                generateMaleSummer();
+                break;
+            case "fall":
+                generateMaleFall();
+                break;
+        }
+    }
+    public void generateAndrogynousStyles()
+    {
+        switch (season)
+        {
+            case "winter":
+                generateAndWinter();
+                break;
+            case "spring":
+                generateAndSpring();
+                break;
+            case "summer":
+                generateAndSummer();
+                break;
+            case "fall":
+                generateAndFall();
+                break;
+        }
+    } */ 
  
-}
+} 
