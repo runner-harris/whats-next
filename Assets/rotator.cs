@@ -5,9 +5,17 @@ using UnityEngine;
 public class rotator : MonoBehaviour
 {
 
-    // Update is called once per frame
-    void rotate()
-    {
-        transform.Rotate(new Vector3(0, 0, 45) * Time.deltaTime);
+    protected bool rotate = false;
+
+    public void CubeRotate () {
+        rotate = !rotate;
     }
+
+    public void Update() {
+        if(rotate)
+        {
+            transform.Rotate (new Vector3 (0, 0, 45) * Time.deltaTime);
+        }
+    }
+    
 }
