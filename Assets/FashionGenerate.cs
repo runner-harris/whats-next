@@ -22,7 +22,15 @@ public class FashionGenerate : MonoBehaviour
     string[] styleChoicesArray = new string[]{"retro", "emo", "preppy", "3", "4", "5", "6", "7", "8", "9", "10", "11"};
     string styleChoices = "";
 
+    public GameObject outfitModel;
+    public GameObject nakedModel;
+    
+   // GameObject[] SavedStyles = new GameObject[];
 
+    void start()
+    {
+        outfitModel.SetActive(false);
+    }
     public void setSeason()
     {
         if (seasonDropdown.value == 0){season = "winter";}
@@ -70,9 +78,12 @@ public class FashionGenerate : MonoBehaviour
                 styleChoices += styleChoicesArray[i] + "\n";
             }
         }
-        styleTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
+        backgroundInfoTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
             + " Your style preferences are: " + "\n" + styleChoices;
-        backgroundInfoTextHolder.text = "Background Information Placeholder Text...";
+        //backgroundInfoTextHolder.text = "Background Information Placeholder Text...";
+
+        nakedModel.SetActive(false);
+        outfitModel.SetActive(true);
     }
     public void saveStyle()
     {
@@ -83,28 +94,36 @@ public class FashionGenerate : MonoBehaviour
         styleTextHolder.text = "Under Construction...";
     }
 
+    /* TO DO
+
     public void grabOutfit() {
         if (gender == "masculine")
         {
-            // code that eliminates styles classified as feminine- women's tops, also more generally skirts, dresses
-            // try catch for styles? maybe kept within a for loop so we can iterate through the
-            // stylechoicesarray and enable certain styles
-            // maybe we have an array of clothing items for each style choice that we can add to
-            // an array of total potential styles for that user- then if they want to regenerate a look
-            // if their preferences are the same we can just randomize again.
-            // the other thing to consider is some sort of styling functionality- like based on each item
-            // generated, certain other things would be disqualified based on wearability
-            // ex. if dress generated, no pants generated as well
+            setTop(season, toggles)
         }
         else if (gender == "feminine")
         {
-            //code that eliminates styles classified as masculine- really just gendered versions of clothing from whatever site we pull from
+            switch (season)
+            {
+                case 'winter':
+                case 'spring':
+                case 'summer':
+                case 'fall':
+            }
         }
-        else {
-            // this would be the androgynous option- since we will likely pull from both pools of clothing
-            // also may want to implement something that guarantees a look that is not entirely masc or fem
+        else 
+        {
+            switch (season)
+            {
+                case 'winter':
+                case 'spring':
+                case 'summer':
+                case 'fall':
+            }
 
         }
     }
+
+    */
  
 }
