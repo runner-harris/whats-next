@@ -11,6 +11,7 @@ public class FashionGenerate : MonoBehaviour
 
     string gender;
     public TMPro.TMP_Dropdown genderSelect;
+    //public GameObject model;
     
 
     bool[] styles;
@@ -77,10 +78,21 @@ public class FashionGenerate : MonoBehaviour
     public void saveStyle()
     {
         styleTextHolder.text = "Under Construction...";
+        
+        // array of savedstyles - global? 
+        // if (save selected)
+        // grab model object, add to savedstyles array
+        // end of code? and then page will have a function that populates saved styles into gallery
     }
+
+    public void loadSavedStyles() {
+        // for (int i = 0; i < savedStyles.Length; i++)
+    }
+
     public void shareStyle()
     {
         styleTextHolder.text = "Under Construction...";
+        // scrap style share? or link twitter or insta?
     }
 
     public void grabOutfit() {
@@ -96,10 +108,12 @@ public class FashionGenerate : MonoBehaviour
             // generated, certain other things would be disqualified based on wearability
             // ex. if dress generated, no pants generated as well
         }
+
         else if (gender == "feminine")
         {
             //code that eliminates styles classified as masculine- really just gendered versions of clothing from whatever site we pull from
         }
+
         else {
             // this would be the androgynous option- since we will likely pull from both pools of clothing
             // also may want to implement something that guarantees a look that is not entirely masc or fem
