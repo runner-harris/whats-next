@@ -1,14 +1,17 @@
-﻿<Properties StartupConfiguration="{9D9E3FC6-F358-67E4-92AD-ED6020B636D2}|">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/rotator.cs">
     <Files>
-      <File FileName="Assets/rotator.cs" Line="11" Column="40" />
+      <File FileName="Assets/rotator.cs" Line="17" Column="19" />
+      <File FileName="Assets/FashionGenerate.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="whats-next" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="rotator.cs" selected="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="rotator.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

@@ -11,6 +11,7 @@ public class FashionGenerate : MonoBehaviour
 
     string gender;
     public TMPro.TMP_Dropdown genderSelect;
+    //public GameObject model;
     
 
     bool[] styles;
@@ -88,10 +89,21 @@ public class FashionGenerate : MonoBehaviour
     public void saveStyle()
     {
         styleTextHolder.text = "Under Construction...";
+        
+        // array of savedstyles - global? 
+        // if (save selected)
+        // grab model object, add to savedstyles array
+        // end of code? and then page will have a function that populates saved styles into gallery
     }
+
+    public void loadSavedStyles() {
+        // for (int i = 0; i < savedStyles.Length; i++)
+    }
+
     public void shareStyle()
     {
         styleTextHolder.text = "Under Construction...";
+        // scrap style share? or link twitter or insta?
     }
 
     /* TO DO
@@ -101,6 +113,7 @@ public class FashionGenerate : MonoBehaviour
         {
             setTop(season, toggles)
         }
+
         else if (gender == "feminine")
         {
             switch (season)
