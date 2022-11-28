@@ -1,17 +1,14 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/rotator.cs">
+﻿<Properties StartupConfiguration="{9D9E3FC6-F358-67E4-92AD-ED6020B636D2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/loadScene.cs">
     <Files>
-      <File FileName="Assets/rotator.cs" Line="17" Column="19" />
-      <File FileName="Assets/FashionGenerate.cs" />
+      <File FileName="Assets/loadScene.cs" Line="18" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="whats-next" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="rotator.cs" selected="True" />
-              </Node>
+            <Node name="Assets" expanded="True">
+              <Node name="loadScene.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -20,7 +17,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c6a6788a-c1eb-4c06-88c5-3f3db8227c5c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="00d6801e-8afd-45ac-a343-e088b850a1a7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
