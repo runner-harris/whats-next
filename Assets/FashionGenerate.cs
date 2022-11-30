@@ -20,11 +20,21 @@ public class FashionGenerate : MonoBehaviour
     public TextMeshProUGUI styleTextHolder;
     public TextMeshProUGUI backgroundInfoTextHolder;
 
-    string[] styleChoicesArray = new string[]{"retro", "emo", "preppy", "3", "4", "5", "6", "7", "8", "9", "10", "11"};
+    string[] styleChoicesArray = new string[]{"retro", "emo", "preppy", "goth", "trendy", "nerdy", "sleek", "funky",
+     "artist", "urban", "bold", "timeless"};
     string styleChoices = "";
 
     public GameObject outfitModel;
     public GameObject nakedModel;
+    public GameObject shirt;
+    public GameObject pants;
+    
+  //  List <Color> colorList = new List<Color>();
+   // public Color color;
+   // public Color retro = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+  //  public Color emo = Random.ColorHSV(1f, 1f, 1f, 1f, 1f, 1f);
+
+   // Random rnd = new Random();
     
    // GameObject[] SavedStyles = new GameObject[];
 
@@ -81,10 +91,23 @@ public class FashionGenerate : MonoBehaviour
         }
         backgroundInfoTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
             + " Your style preferences are: " + "\n" + styleChoices;
-        //backgroundInfoTextHolder.text = "Background Information Placeholder Text...";
+        
 
         nakedModel.SetActive(false);
         outfitModel.SetActive(true);
+
+        /*
+        TO DO
+             make functions that set color for shirts and pants
+        shirt.SetColor();
+        pants.SetColor();
+        */
+        
+        shirt.GetComponent<MeshRenderer>().materials[0].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        shirt.GetComponent<MeshRenderer>().materials[1].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        pants.GetComponent<MeshRenderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+
+        styleChoices = "";
     }
     public void saveStyle()
     {
@@ -104,6 +127,25 @@ public class FashionGenerate : MonoBehaviour
     {
         styleTextHolder.text = "Under Construction...";
         // scrap style share? or link twitter or insta?
+    }
+
+  /*  public void SetColor()
+    {
+        for(int i = 0; i < toggles.Length; i++)
+        {
+            if(toggles[i].isOn)
+            {
+                if(toggles[0])
+                {
+                    colorList.Add(retro);
+                }
+                if(toggles[1])
+                {
+                    colorList.Add(emo);
+                }
+            }
+        }
+        color = rnd.Next(colorList.Count);
     }
 
     /* TO DO
@@ -138,5 +180,6 @@ public class FashionGenerate : MonoBehaviour
     }
 
     */
+
  
 }

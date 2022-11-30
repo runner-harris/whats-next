@@ -257,6 +257,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7918335002988649766, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7918335002988649766, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2335884693870783961, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
     - target: {fileID: -7493596028755563170, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -277,13 +285,29 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: -0.7071068
       objectReference: {fileID: 0}
+    - target: {fileID: -7029948723529949830, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_Name
+      value: Pants
+      objectReference: {fileID: 0}
+    - target: {fileID: 882129737928793925, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 882129737928793925, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
       propertyPath: m_Name
       value: outfit
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148817236446094103, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_Name
+      value: Shirt
       objectReference: {fileID: 0}
     - target: {fileID: 5148817236446094103, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
       propertyPath: m_Layer
@@ -292,6 +316,10 @@ PrefabInstance:
     - target: {fileID: 5148817236446094103, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148817236446094103, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
@@ -611,6 +639,8 @@ MonoBehaviour:
   backgroundInfoTextHolder: {fileID: 0}
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
+  shirt: {fileID: 0}
+  pants: {fileID: 0}
 --- !u!114 &247422898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2838,7 +2868,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3491,6 +3521,8 @@ MonoBehaviour:
   backgroundInfoTextHolder: {fileID: 1297444623}
   outfitModel: {fileID: 461473665}
   nakedModel: {fileID: 1722262608}
+  shirt: {fileID: 2115287472}
+  pants: {fileID: 628687059}
 --- !u!114 &821097480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5163,6 +5195,8 @@ MonoBehaviour:
   backgroundInfoTextHolder: {fileID: 0}
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
+  shirt: {fileID: 0}
+  pants: {fileID: 0}
 --- !u!114 &1176512948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5910,6 +5944,8 @@ MonoBehaviour:
   backgroundInfoTextHolder: {fileID: 0}
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
+  shirt: {fileID: 0}
+  pants: {fileID: 0}
 --- !u!4 &1283924219
 Transform:
   m_ObjectHideFlags: 0
@@ -7060,7 +7096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4fe8b8a008c5f8c4db34c04b97f46167, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fe8b8a008c5f8c4db34c04b97f46167, type: 3}
@@ -8814,6 +8850,8 @@ MonoBehaviour:
   backgroundInfoTextHolder: {fileID: 0}
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
+  shirt: {fileID: 0}
+  pants: {fileID: 0}
 --- !u!1 &2100300053
 GameObject:
   m_ObjectHideFlags: 0
