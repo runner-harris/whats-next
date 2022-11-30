@@ -26,6 +26,7 @@ public class FashionGenerate : MonoBehaviour
 
     public GameObject outfitModel;
     public GameObject nakedModel;
+    public GameObject nakedFemaleModel;
     public GameObject shirt;
     public GameObject pants;
     
@@ -55,8 +56,18 @@ public class FashionGenerate : MonoBehaviour
 
     public void setGender()
     {
-        if (genderSelect.value == 0){gender = "masculine";}
-        else if(genderSelect.value == 1){gender = "feminine";}
+        if (genderSelect.value == 0)
+            {
+                gender = "masculine";
+                nakedModel.SetActive(true);
+                nakedFemaleModel.SetActive(false);
+            }
+        else if(genderSelect.value == 1)
+            {
+                gender = "feminine";
+                nakedFemaleModel.SetActive(true);
+                nakedModel.SetActive(false);
+            }
         else{gender = "androgynous";}
     }
 
@@ -95,8 +106,8 @@ public class FashionGenerate : MonoBehaviour
             + " Your style preferences are: " + "\n" + styleChoices;
         
 
-        nakedModel.SetActive(false);
-        outfitModel.SetActive(true);
+       // nakedModel.SetActive(false);
+       // outfitModel.SetActive(true);
 
         /*
         TO DO
