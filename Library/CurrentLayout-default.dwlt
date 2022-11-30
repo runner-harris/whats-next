@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1586
     height: 939
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 17
+  controlID: 115
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 18
+  controlID: 116
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 19
+  controlID: 117
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0.00034332275, y: 0.00019311905, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -371,9 +371,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1370.7439
+    m_Target: 2.495041
     speed: 2
-    m_Value: 1370.7439
+    m_Value: 2.4969137
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -426,20 +426,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e66c0000
-      m_LastClickedID: 27878
-      m_ExpandedIDs: 1ebfffff26c1ffff28c1ffffa4d1ffffded2ffff40d5ffff04d8ffff50dfffff7ee2ffff9eefffffaef5ffffa4faffff84450000705b00000060000018600000c660000032610000686100007a6c0000ce6c0000e66c0000086d0000
+      m_SelectedIDs: e0e1ffff
+      m_LastClickedID: -7712
+      m_ExpandedIDs: c4e0ffff8ee1ffffe2e1ffff56ecffff60efffffdaf3ffff0cf4ffff5ef4ffff60f4ffff1ef7ffff70fbfffffe410000ec450000dc520000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: outfit
-        m_OriginalName: outfit
+        m_Name: GameObject
+        m_OriginalName: GameObject
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 27896
+        m_UserData: -8604
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -617,9 +617,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 56450000
-    m_LastClickedID: 17750
-    m_ExpandedIDs: 000000004c4500002c4c0000
+    m_SelectedIDs: 68410000
+    m_LastClickedID: 16744
+    m_ExpandedIDs: 00000000584100005a410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,7 +647,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c450000
+    m_ExpandedIDs: 00000000584100005a410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
