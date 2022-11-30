@@ -35,8 +35,10 @@ public class FashionGenerate : MonoBehaviour
   //  public Color emo = Random.ColorHSV(1f, 1f, 1f, 1f, 1f, 1f);
 
    // Random rnd = new Random();
-    
-   // GameObject[] SavedStyles = new GameObject[];
+    public GameObject[] savedStyles;
+
+
+    // GameObject[] SavedStyles = new GameObject[];
 
     void start()
     {
@@ -112,7 +114,7 @@ public class FashionGenerate : MonoBehaviour
     public void saveStyle()
     {
         styleTextHolder.text = "Under Construction...";
-        
+        // savedStyles.Add(this?)
         // array of savedstyles - global? 
         // if (save selected)
         // grab model object, add to savedstyles array
@@ -121,6 +123,11 @@ public class FashionGenerate : MonoBehaviour
 
     public void loadSavedStyles() {
         // for (int i = 0; i < savedStyles.Length; i++)
+        // set transform.position to previous styles position plus 220 on x?
+        // if i = 0, vector3 position = -760, 30, 40
+        // else position = position of previous style plus 220 on x
+        // use object.instantiate(savedStyles[i], position, 0rotate)
+        // dont need to set active because already will be since pulling from only active style
     }
 
     public void shareStyle()
