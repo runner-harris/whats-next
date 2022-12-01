@@ -20,8 +20,7 @@ public class FashionGenerate : MonoBehaviour
     public TextMeshProUGUI styleTextHolder;
     public TextMeshProUGUI backgroundInfoTextHolder;
 
-    string[] styleChoicesArray = new string[]{"retro", "emo", "preppy", "goth", "trendy", "nerdy", "sleek", "funky",
-     "artist", "urban", "bold", "timeless"};
+    string[] styleChoicesArray = new string[]{"Classic", "Trendy", "Edgy", "Relaxed", "Preppy", "Urban", "Chic", "Funky"};
     string styleChoices = "";
 
     public GameObject outfitModel;
@@ -30,12 +29,10 @@ public class FashionGenerate : MonoBehaviour
     public GameObject shirt;
     public GameObject pants;
     
-  //  List <Color> colorList = new List<Color>();
-   // public Color color;
-   // public Color retro = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
-  //  public Color emo = Random.ColorHSV(1f, 1f, 1f, 1f, 1f, 1f);
-
-   // Random rnd = new Random();
+    public GameObject ClassicFemaleModel;
+    public GameObject RelaxedMaleModel;
+    public GameObject TrendySummerFemale;
+    public GameObject TrendyMale;
     public GameObject[] savedStyles;
 
 
@@ -60,13 +57,15 @@ public class FashionGenerate : MonoBehaviour
             {
                 gender = "masculine";
                 nakedModel.SetActive(true);
-                nakedFemaleModel.SetActive(false);
+                //nakedFemaleModel.SetActive(false);
+                clearAllFemaleModels();
             }
         else if(genderSelect.value == 1)
             {
                 gender = "feminine";
                 nakedFemaleModel.SetActive(true);
-                nakedModel.SetActive(false);
+                //nakedModel.SetActive(false);
+                clearAllMaleModels();
             }
         else{gender = "androgynous";}
     }
@@ -74,7 +73,6 @@ public class FashionGenerate : MonoBehaviour
     void style()
     {
         styles = new bool[toggles.Length];
-        // can we add something here to adjust the amount of 
         for(int i = 0; i < toggles.Length; i++){
             styles[i] = false;
             int index = i;
@@ -105,23 +103,82 @@ public class FashionGenerate : MonoBehaviour
         backgroundInfoTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
             + " Your style preferences are: " + "\n" + styleChoices;
         
-
-       // nakedModel.SetActive(false);
-       // outfitModel.SetActive(true);
-
-        /*
-        TO DO
-             make functions that set color for shirts and pants
-        shirt.SetColor();
-        pants.SetColor();
-        */
-        
+        getStyle();
         shirt.GetComponent<MeshRenderer>().materials[0].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
         shirt.GetComponent<MeshRenderer>().materials[1].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
         pants.GetComponent<MeshRenderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 
         styleChoices = "";
     }
+
+    public void getStyle()
+    {
+        for(int i = 0; i < toggles.Length; i++)
+        {
+            if(toggles[i].isOn)
+            {
+                // Classic
+                if(i == 0)
+                {
+                    // Male
+                    if(genderSelect.value == 0)
+                    {
+                        outfitModel.SetActive(true);
+                        nakedModel.SetActive(false);
+                    }
+                    // Female
+                    else if(genderSelect.value == 1)
+                    {
+                        ClassicFemaleModel.SetActive(true);
+                        nakedFemaleModel.SetActive(false);
+                    }
+                }
+                //Trendy
+                else if(i == 1)
+                {
+                    if(genderSelect.value == 0)
+                    {
+                        TrendyMale.SetActive(true);
+                        nakedModel.SetActive(false);
+                    }
+                    else if(genderSelect.value == 1)
+                    {
+                        if(seasonDropdown.value == 1 || seasonDropdown.value == 2)
+                        {
+                            TrendySummerFemale.SetActive(true);
+                            nakedFemaleModel.SetActive(false);
+                        }
+                    }
+                }
+                //Relaxed
+                else if(i == 3)
+                {
+                    // Male
+                    if(genderSelect.value == 0)
+                    {
+                        RelaxedMaleModel.SetActive(true);
+                        nakedModel.SetActive(false);
+                    }
+                }
+            }
+        }
+    }
+
+    public void clearAllFemaleModels()
+    {
+        nakedFemaleModel.SetActive(false);
+        TrendySummerFemale.SetActive(false);
+        ClassicFemaleModel.SetActive(false);
+    }
+    public void clearAllMaleModels()
+    {
+        nakedModel.SetActive(false);
+        TrendyMale.SetActive(false);
+        outfitModel.SetActive(false);
+        RelaxedMaleModel.SetActive(false);
+    }
+
+
     public void saveStyle()
     {
         styleTextHolder.text = "Under Construction...";
@@ -147,24 +204,6 @@ public class FashionGenerate : MonoBehaviour
         // scrap style share? or link twitter or insta?
     }
 
-  /*  public void SetColor()
-    {
-        for(int i = 0; i < toggles.Length; i++)
-        {
-            if(toggles[i].isOn)
-            {
-                if(toggles[0])
-                {
-                    colorList.Add(retro);
-                }
-                if(toggles[1])
-                {
-                    colorList.Add(emo);
-                }
-            }
-        }
-        color = rnd.Next(colorList.Count);
-    }
 
     /* TO DO
 
