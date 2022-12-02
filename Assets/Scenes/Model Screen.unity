@@ -579,6 +579,7 @@ MonoBehaviour:
   RelaxedMaleModel: {fileID: 0}
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
+  FemaleFall: {fileID: 0}
   savedStyles: []
 --- !u!114 &247422898
 MonoBehaviour:
@@ -2363,6 +2364,79 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!1001 &643773906
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_Name
+      value: femaleFall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
 --- !u!1 &701531916
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,6 +3204,7 @@ MonoBehaviour:
   RelaxedMaleModel: {fileID: 2017319041}
   TrendySummerFemale: {fileID: 2082944463}
   TrendyMale: {fileID: 2005798292}
+  FemaleFall: {fileID: 1691851426}
   savedStyles: []
 --- !u!114 &821097480
 MonoBehaviour:
@@ -4731,6 +4806,7 @@ MonoBehaviour:
   RelaxedMaleModel: {fileID: 0}
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
+  FemaleFall: {fileID: 0}
   savedStyles: []
 --- !u!114 &1176512948
 MonoBehaviour:
@@ -5378,6 +5454,7 @@ MonoBehaviour:
   RelaxedMaleModel: {fileID: 0}
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
+  FemaleFall: {fileID: 0}
   savedStyles: []
 --- !u!4 &1283924219
 Transform:
@@ -6913,6 +6990,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669855742}
   m_CullTransparentMesh: 1
+--- !u!1 &1691851426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+  m_PrefabInstance: {fileID: 643773906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1691851427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691851426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3789163f27f4c8f42a5fcf3301022ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1749542813
 GameObject:
   m_ObjectHideFlags: 0
@@ -7941,6 +8035,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1691851427}
+        m_TargetAssemblyTypeName: rotateFemaleModel, Assembly-CSharp
+        m_MethodName: CubeRotate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2005798292 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98bca1539f6972e498f8240b92a1b6e3, type: 3}
@@ -8249,6 +8355,7 @@ MonoBehaviour:
   RelaxedMaleModel: {fileID: 0}
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
+  FemaleFall: {fileID: 0}
   savedStyles: []
 --- !u!1 &2100300053
 GameObject:

@@ -33,6 +33,9 @@ public class FashionGenerate : MonoBehaviour
     public GameObject RelaxedMaleModel;
     public GameObject TrendySummerFemale;
     public GameObject TrendyMale;
+    public GameObject FemaleFall;
+
+
     public GameObject[] savedStyles;
 
 
@@ -163,6 +166,12 @@ public class FashionGenerate : MonoBehaviour
                         clearAllMaleModels();
                         RelaxedMaleModel.SetActive(true);
                         nakedModel.SetActive(false);
+                    }
+                    //Female
+                    else if(genderSelect.value == 1)
+                    {
+                        clearAllFemaleModels();
+                        FemaleFall.SetActive(true);
                     }
                 }
             }
