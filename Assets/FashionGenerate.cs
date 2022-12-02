@@ -123,12 +123,14 @@ public class FashionGenerate : MonoBehaviour
                     // Male
                     if(genderSelect.value == 0)
                     {
+                        clearAllMaleModels();
                         outfitModel.SetActive(true);
                         nakedModel.SetActive(false);
                     }
                     // Female
                     else if(genderSelect.value == 1)
                     {
+                        clearAllFemaleModels();
                         ClassicFemaleModel.SetActive(true);
                         nakedFemaleModel.SetActive(false);
                     }
@@ -138,6 +140,7 @@ public class FashionGenerate : MonoBehaviour
                 {
                     if(genderSelect.value == 0)
                     {
+                        clearAllMaleModels();
                         TrendyMale.SetActive(true);
                         nakedModel.SetActive(false);
                     }
@@ -145,6 +148,7 @@ public class FashionGenerate : MonoBehaviour
                     {
                         if(seasonDropdown.value == 1 || seasonDropdown.value == 2)
                         {
+                            clearAllFemaleModels();
                             TrendySummerFemale.SetActive(true);
                             nakedFemaleModel.SetActive(false);
                         }
@@ -156,6 +160,7 @@ public class FashionGenerate : MonoBehaviour
                     // Male
                     if(genderSelect.value == 0)
                     {
+                        clearAllMaleModels();
                         RelaxedMaleModel.SetActive(true);
                         nakedModel.SetActive(false);
                     }
