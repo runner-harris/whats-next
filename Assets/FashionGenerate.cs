@@ -43,21 +43,29 @@ public class FashionGenerate : MonoBehaviour
 
     public static List<GameObject> savedStyles = new List<GameObject>();
 
+    public TextMeshProUGUI testerText;
+
+     Scene m_Scene;
+    string sceneName;
+    
+     
+
 
     //public GameObject[] savedStyles = new GameObject[6];
     //private int saveCount = 0;
 
+     public void Awake()
+    {
+          //DontDestroyOnLoad(savedStyles[0]);
+    }
     void start()
     {
         outfitModel.SetActive(false);
-
-        if (SceneManager.GetActiveScene().name == "gallery") {
-            Vector3 position = loader.transform.position;
-            Quaternion rotation = new Quaternion(0, 0, 0, 0);
-            for (int i = 0; i < savedStyles.Count; i++) {
-                Instantiate(savedStyles[i], position, rotation);
-            }
-        }
+        
+    }
+    public void getSceneName()
+    {
+         testerText.text = SceneManager.GetActiveScene().name;
     }
     public void setSeason()
     {
@@ -117,8 +125,8 @@ public class FashionGenerate : MonoBehaviour
                 styleChoices += styleChoicesArray[i] + "\n";
             }
         }
-        backgroundInfoTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
-            + " Your style preferences are: " + "\n" + styleChoices;
+        //backgroundInfoTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
+         //   + " Your style preferences are: " + "\n" + styleChoices;
 
         getStyle();
         //shirt.GetComponent<MeshRenderer>().materials[0].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
@@ -299,30 +307,18 @@ public class FashionGenerate : MonoBehaviour
     {
         for (int i = 0; i < allModels.Length; i++) {
             if (allModels[i].activeSelf) {
+                
                 savedStyles.Add(allModels[i]);
+                DontDestroyOnLoad(allModels[i]);
                 //saveCount = saveCount + 1;
             }
         }
+    }
 
+    public void loadSavedStyles() {
         Vector3 position = loader.transform.position;
         Quaternion rotation = new Quaternion(0, 0, 0, 0);
         Instantiate(savedStyles[0], position, rotation);
-
-
-            // savedStyles.Add(this?)
-            // array of savedstyles - global? 
-            // if (save selected)
-            // grab model object, add to savedstyles array
-            // end of code? and then page will have a function that populates saved styles into gallery
-        }
-
-    public void loadSavedStyles() {
-        // for (int i = 0; i < savedStyles.Length; i++)
-        // set transform.position to previous styles position plus 220 on x?
-        // if i = 0, vector3 position = -760, 30, 40
-        // else position = position of previous style plus 220 on x
-        // use object.instantiate(savedStyles[i], position, 0rotate)
-        // dont need to set active because already will be since pulling from only active style
     }
 
     public void shareStyle()
@@ -330,40 +326,5 @@ public class FashionGenerate : MonoBehaviour
         styleTextHolder.text = "Under Construction...";
         // scrap style share? or link twitter or insta?
     }
-
-
-    /* TO DO
-
-    public void grabOutfit() {
-        if (gender == "masculine")
-        {
-            setTop(season, toggles)
-        }
-
-        else if (gender == "feminine")
-        {
-            switch (season)
-            {
-                case 'winter':
-                case 'spring':
-                case 'summer':
-                case 'fall':
-            }
-        }
-        else 
-        {
-            switch (season)
-            {
-                case 'winter':
-                case 'spring':
-                case 'summer':
-                case 'fall':
-            }
-
-        }
-    }
-
-    */
-
 
     }
