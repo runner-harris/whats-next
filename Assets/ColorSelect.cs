@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class ColorSelect : MonoBehaviour
@@ -9,6 +10,7 @@ public class ColorSelect : MonoBehaviour
     public GameObject garm1;
     public GameObject garm2;
     private bool active;
+    
 
     Color[] classicColors = new Color[]{new Color(144, 20, 20), new Color(146, 146, 146), new Color(0, 0, 0), new Color(11, 18, 65), new Color(101, 105, 133)};
     Color[] trendyColors = new Color[]{new Color(203, 216, 70), new Color(178, 155, 204), new Color(49, 27, 9), new Color(162, 162, 162)};
@@ -41,8 +43,42 @@ public class ColorSelect : MonoBehaviour
     }
 
     void colorGenerate() {
-        //if statements to determine style 
-        garm1.GetComponent<MeshRenderer>().material.color = randomColor(funkyColors);
-
+        if (model.tag == "Funky") {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(funkyColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(funkyColors);
+        } else if (model.tag == "Classic") {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(classicColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(classicColors);
+        }
+        else if (model.tag == "Trendy")
+        {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(trendyColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(trendyColors);
+        }
+        else if (model.tag == "Edgy")
+        {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(edgyColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(edgyColors);
+        }
+        else if (model.tag == "Relaxed")
+        {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(relaxedColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(relaxedColors);
+        }
+        else if (model.tag == "Preppy")
+        {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(preppyColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(preppyColors);
+        }
+        else if (model.tag == "Chic")
+        {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(chicColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(chicColors);
+        }
+        else if (model.tag == "Street")
+        {
+            garm1.GetComponent<MeshRenderer>().material.color = randomColor(streetColors);
+            garm2.GetComponent<MeshRenderer>().material.color = randomColor(streetColors);
+        }
     }
 }

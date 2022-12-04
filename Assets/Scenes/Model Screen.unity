@@ -314,6 +314,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
+      propertyPath: m_TagString
+      value: Classic
+      objectReference: {fileID: 0}
     - target: {fileID: 5148817236446094103, guid: 89a6ac44b41be9d47af6c410fe647ab2, type: 3}
       propertyPath: m_Name
       value: Shirt
@@ -570,6 +574,7 @@ MonoBehaviour:
   - {fileID: 0}
   styleTextHolder: {fileID: 1297444623}
   backgroundInfoTextHolder: {fileID: 0}
+  allModels: []
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
   nakedFemaleModel: {fileID: 0}
@@ -580,7 +585,6 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
-  savedStyles: []
 --- !u!114 &247422898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2442,6 +2446,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3177100554643335397, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
       propertyPath: m_Name
       value: femaleFall
@@ -2449,6 +2457,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305017532360591254, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
+      propertyPath: m_TagString
+      value: garment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618edf43fca8e2f45a531b0e5a123df2, type: 3}
@@ -3210,6 +3222,7 @@ MonoBehaviour:
   - {fileID: 2142301623}
   styleTextHolder: {fileID: 1297444623}
   backgroundInfoTextHolder: {fileID: 1297444623}
+  allModels: []
   outfitModel: {fileID: 461473665}
   nakedModel: {fileID: 590418245}
   nakedFemaleModel: {fileID: 7552283}
@@ -3220,7 +3233,6 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 2082944463}
   TrendyMale: {fileID: 2005798292}
   FemaleFall: {fileID: 1691851426}
-  savedStyles: []
 --- !u!114 &821097480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,6 +4659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3049359952546978875, guid: 446e51ce621f33e4f90bb10b0ae05355, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 446e51ce621f33e4f90bb10b0ae05355, type: 3}
       propertyPath: m_Name
       value: RelaxedMaleModel
@@ -4654,6 +4670,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 446e51ce621f33e4f90bb10b0ae05355, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 446e51ce621f33e4f90bb10b0ae05355, type: 3}
+      propertyPath: m_TagString
+      value: Relaxed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7769410982149229641, guid: 446e51ce621f33e4f90bb10b0ae05355, type: 3}
+      propertyPath: m_TagString
+      value: garment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446e51ce621f33e4f90bb10b0ae05355, type: 3}
@@ -4812,6 +4836,7 @@ MonoBehaviour:
   - {fileID: 0}
   styleTextHolder: {fileID: 1297444623}
   backgroundInfoTextHolder: {fileID: 0}
+  allModels: []
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
   nakedFemaleModel: {fileID: 0}
@@ -4822,7 +4847,6 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
-  savedStyles: []
 --- !u!114 &1176512948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5460,6 +5484,7 @@ MonoBehaviour:
   - {fileID: 0}
   styleTextHolder: {fileID: 0}
   backgroundInfoTextHolder: {fileID: 0}
+  allModels: []
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
   nakedFemaleModel: {fileID: 0}
@@ -5470,7 +5495,6 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
-  savedStyles: []
 --- !u!4 &1283924219
 Transform:
   m_ObjectHideFlags: 0
@@ -6631,6 +6655,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6754831421092206720, guid: 98bca1539f6972e498f8240b92a1b6e3, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 98bca1539f6972e498f8240b92a1b6e3, type: 3}
       propertyPath: m_Name
       value: menbasic
@@ -6638,6 +6666,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 98bca1539f6972e498f8240b92a1b6e3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164528782787192712, guid: 98bca1539f6972e498f8240b92a1b6e3, type: 3}
+      propertyPath: m_TagString
+      value: garment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98bca1539f6972e498f8240b92a1b6e3, type: 3}
@@ -7548,9 +7580,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9d2142d278cef62499a1125c5afc0baf, type: 3}
+      propertyPath: m_TagString
+      value: Classic
+      objectReference: {fileID: 0}
     - target: {fileID: 3699388925136044661, guid: 9d2142d278cef62499a1125c5afc0baf, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021836247738880761, guid: 9d2142d278cef62499a1125c5afc0baf, type: 3}
+      propertyPath: m_TagString
+      value: garment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d2142d278cef62499a1125c5afc0baf, type: 3}
@@ -8142,6 +8182,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 837853812655981246, guid: 2f180bae89f0c864599c10c6272148c9, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2f180bae89f0c864599c10c6272148c9, type: 3}
       propertyPath: m_Name
       value: femaleSummer
@@ -8149,6 +8193,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2f180bae89f0c864599c10c6272148c9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744941212112122899, guid: 2f180bae89f0c864599c10c6272148c9, type: 3}
+      propertyPath: m_TagString
+      value: garment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f180bae89f0c864599c10c6272148c9, type: 3}
@@ -8361,6 +8409,7 @@ MonoBehaviour:
   - {fileID: 0}
   styleTextHolder: {fileID: 1297444623}
   backgroundInfoTextHolder: {fileID: 0}
+  allModels: []
   outfitModel: {fileID: 0}
   nakedModel: {fileID: 0}
   nakedFemaleModel: {fileID: 0}
@@ -8371,7 +8420,6 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
-  savedStyles: []
 --- !u!1 &2100300053
 GameObject:
   m_ObjectHideFlags: 0
