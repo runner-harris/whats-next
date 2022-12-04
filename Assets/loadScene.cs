@@ -14,6 +14,11 @@ public class loadScene : MonoBehaviour
         SceneManager.LoadScene("Gallery");
     }
 
+    public void menuScene()
+    {
+        SceneManager.LoadScene("Menu Screen");
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 using System;
 
 public class FashionGenerate : MonoBehaviour
@@ -36,16 +37,27 @@ public class FashionGenerate : MonoBehaviour
     public GameObject TrendySummerFemale;
     public GameObject TrendyMale;
     public GameObject FemaleFall;
+    public GameObject loader;
+
+    private GameObject activeOutfit;
+
+    public static List<GameObject> savedStyles = new List<GameObject>();
 
 
-    public static ArrayList savedStyles = new ArrayList();
-
-
-    // GameObject[] SavedStyles = new GameObject[];
+    //public GameObject[] savedStyles = new GameObject[6];
+    //private int saveCount = 0;
 
     void start()
     {
         outfitModel.SetActive(false);
+
+        if (SceneManager.GetActiveScene().name == "gallery") {
+            Vector3 position = loader.transform.position;
+            Quaternion rotation = new Quaternion(0, 0, 0, 0);
+            for (int i = 0; i < savedStyles.Count; i++) {
+                Instantiate(savedStyles[i], position, rotation);
+            }
+        }
     }
     public void setSeason()
     {
@@ -132,6 +144,7 @@ public class FashionGenerate : MonoBehaviour
                         outfitModel.SetActive(true);
                         nakedModel.SetActive(false);
                         ColorGenerate();
+                        activeOutfit = outfitModel;
                     }
                     // Female
                     else if (genderSelect.value == 1)
@@ -140,6 +153,7 @@ public class FashionGenerate : MonoBehaviour
                         ClassicFemaleModel.SetActive(true);
                         nakedFemaleModel.SetActive(false);
                         ColorGenerate();
+
                     }
                 }
                 //Trendy
@@ -286,14 +300,21 @@ public class FashionGenerate : MonoBehaviour
         for (int i = 0; i < allModels.Length; i++) {
             if (allModels[i].activeSelf) {
                 savedStyles.Add(allModels[i]);
+                //saveCount = saveCount + 1;
             }
         }
-        // savedStyles.Add(this?)
-        // array of savedstyles - global? 
-        // if (save selected)
-        // grab model object, add to savedstyles array
-        // end of code? and then page will have a function that populates saved styles into gallery
-    }
+
+        Vector3 position = loader.transform.position;
+        Quaternion rotation = new Quaternion(0, 0, 0, 0);
+        Instantiate(savedStyles[0], position, rotation);
+
+
+            // savedStyles.Add(this?)
+            // array of savedstyles - global? 
+            // if (save selected)
+            // grab model object, add to savedstyles array
+            // end of code? and then page will have a function that populates saved styles into gallery
+        }
 
     public void loadSavedStyles() {
         // for (int i = 0; i < savedStyles.Length; i++)
