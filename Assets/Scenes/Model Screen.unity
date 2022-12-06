@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -628,6 +628,10 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
+  FemaleWarmChic: {fileID: 0}
+  FemaleWarmRelaxed: {fileID: 0}
+  FeminineStreetStyle: {fileID: 0}
+  MaleCold: {fileID: 0}
   loader: {fileID: 0}
   testerText: {fileID: 0}
 --- !u!114 &247422898
@@ -1011,6 +1015,87 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!1001 &339035867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8155375290079418997, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    - target: {fileID: -6775212122169697859, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_Name
+      value: femaleWarmChic
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
 --- !u!1 &359025560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,6 +1981,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &530175332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8700617353114198275, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65702495048144492, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_Name
+      value: feminineStreetStyle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045048571908080616, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420271193702789978, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
 --- !u!1 &542727262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,6 +3490,10 @@ MonoBehaviour:
   - {fileID: 2005798292}
   - {fileID: 2017319041}
   - {fileID: 1691851426}
+  - {fileID: 1959168401}
+  - {fileID: 1412427205}
+  - {fileID: 937153354}
+  - {fileID: 1737507948}
   outfitModel: {fileID: 461473665}
   nakedModel: {fileID: 590418245}
   nakedFemaleModel: {fileID: 7552283}
@@ -3326,6 +3504,10 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 2082944463}
   TrendyMale: {fileID: 2005798292}
   FemaleFall: {fileID: 1691851426}
+  FemaleWarmChic: {fileID: 1959168401}
+  FemaleWarmRelaxed: {fileID: 1412427205}
+  FeminineStreetStyle: {fileID: 937153354}
+  MaleCold: {fileID: 1737507948}
   loader: {fileID: 30647942}
   testerText: {fileID: 0}
 --- !u!114 &821097480
@@ -3811,6 +3993,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915250923}
   m_CullTransparentMesh: 1
+--- !u!1 &937153354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f6c32923edf67f43b0dd0aa57477248, type: 3}
+  m_PrefabInstance: {fileID: 530175332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937153356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937153354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3789163f27f4c8f42a5fcf3301022ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &957135695
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,6 +5141,10 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
+  FemaleWarmChic: {fileID: 0}
+  FemaleWarmRelaxed: {fileID: 0}
+  FeminineStreetStyle: {fileID: 0}
+  MaleCold: {fileID: 0}
   loader: {fileID: 0}
   testerText: {fileID: 0}
 --- !u!114 &1176512948
@@ -5038,6 +5241,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176512945}
   m_CullTransparentMesh: 1
+--- !u!1001 &1184995584
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2517993597622604603, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_Name
+      value: femaleWarmRelaxed
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204315240417305764, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
 --- !u!1 &1198433616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5592,6 +5876,10 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
+  FemaleWarmChic: {fileID: 0}
+  FemaleWarmRelaxed: {fileID: 0}
+  FeminineStreetStyle: {fileID: 0}
+  MaleCold: {fileID: 0}
   loader: {fileID: 0}
   testerText: {fileID: 0}
 --- !u!4 &1283924219
@@ -6302,6 +6590,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386821258}
   m_CullTransparentMesh: 1
+--- !u!1001 &1391580896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1312115446385614493, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    - target: {fileID: 414694139957041224, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_TagString
+      value: garment
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_Name
+      value: maleCold
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589374863971260514, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+--- !u!1 &1412427205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0bbb1098cdc8b3f4a80906a33ee8aa47, type: 3}
+  m_PrefabInstance: {fileID: 1184995584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1412427206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412427205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3789163f27f4c8f42a5fcf3301022ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1426887160
 GameObject:
   m_ObjectHideFlags: 0
@@ -7148,6 +7538,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691851426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3789163f27f4c8f42a5fcf3301022ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1737507948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f349c2520403d0f4bad685ac23945058, type: 3}
+  m_PrefabInstance: {fileID: 1391580896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1737507949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737507948}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3789163f27f4c8f42a5fcf3301022ffb, type: 3}
@@ -8201,6 +8608,71 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1959168402}
+        m_TargetAssemblyTypeName: rotateFemaleModel, Assembly-CSharp
+        m_MethodName: CubeRotate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1412427206}
+        m_TargetAssemblyTypeName: rotateFemaleModel, Assembly-CSharp
+        m_MethodName: CubeRotate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 937153356}
+        m_TargetAssemblyTypeName: rotateFemaleModel, Assembly-CSharp
+        m_MethodName: CubeRotate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1737507949}
+        m_TargetAssemblyTypeName: rotateFemaleModel, Assembly-CSharp
+        m_MethodName: CubeRotate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1959168401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c547d126296f9a74393fe5d25dd70f7d, type: 3}
+  m_PrefabInstance: {fileID: 339035867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1959168402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959168401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3789163f27f4c8f42a5fcf3301022ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2005798292 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98bca1539f6972e498f8240b92a1b6e3, type: 3}
@@ -8519,6 +8991,10 @@ MonoBehaviour:
   TrendySummerFemale: {fileID: 0}
   TrendyMale: {fileID: 0}
   FemaleFall: {fileID: 0}
+  FemaleWarmChic: {fileID: 0}
+  FemaleWarmRelaxed: {fileID: 0}
+  FeminineStreetStyle: {fileID: 0}
+  MaleCold: {fileID: 0}
   loader: {fileID: 0}
   testerText: {fileID: 0}
 --- !u!1 &2100300053

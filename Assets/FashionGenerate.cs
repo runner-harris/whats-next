@@ -26,6 +26,7 @@ public class FashionGenerate : MonoBehaviour
     string styleChoices = "";
 
     public GameObject[] allModels;
+
     public GameObject outfitModel;
     public GameObject nakedModel;
     public GameObject nakedFemaleModel;
@@ -37,6 +38,12 @@ public class FashionGenerate : MonoBehaviour
     public GameObject TrendySummerFemale;
     public GameObject TrendyMale;
     public GameObject FemaleFall;
+    public GameObject FemaleWarmChic;
+    public GameObject FemaleWarmRelaxed;
+    public GameObject FeminineStreetStyle;
+    public GameObject MaleCold;
+
+
     public GameObject loader;
 
     private GameObject activeOutfit;
@@ -129,9 +136,6 @@ public class FashionGenerate : MonoBehaviour
             + " Your style preferences are: " + "\n" + styleChoices;
 
         getStyle();
-        //shirt.GetComponent<MeshRenderer>().materials[0].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
-        //shirt.GetComponent<MeshRenderer>().materials[1].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
-        //pants.GetComponent<MeshRenderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 
         styleChoices = "";
     }
@@ -148,11 +152,24 @@ public class FashionGenerate : MonoBehaviour
                     // Male
                     if (genderSelect.value == 0)
                     {
-                        clearAllMaleModels();
-                        outfitModel.SetActive(true);
-                        nakedModel.SetActive(false);
-                        ColorGenerate();
-                        activeOutfit = outfitModel;
+                        // Cold 
+                        if(seasonDropdown.value == 0 || seasonDropdown.value == 3)
+                        {
+                            clearAllMaleModels();
+                            MaleCold.SetActive(true);
+                            nakedModel.SetActive(false);
+                            ColorGenerate();
+                            activeOutfit = MaleCold;
+                        } 
+                        // warm
+                        else if(seasonDropdown.value == 1 || seasonDropdown.value == 2)
+                        {
+                            clearAllMaleModels();
+                            TrendyMale.SetActive(true);
+                            nakedModel.SetActive(false);
+                            ColorGenerate();
+                            activeOutfit = TrendyMale;
+                        }
                     }
                     // Female
                     else if (genderSelect.value == 1)
@@ -199,9 +216,50 @@ public class FashionGenerate : MonoBehaviour
                     //Female
                     else if (genderSelect.value == 1)
                     {
-                        clearAllFemaleModels();
-                        FemaleFall.SetActive(true);
-                        ColorGenerate();
+                        // cold relaxed
+                        if(seasonDropdown.value == 0 || seasonDropdown.value == 3)
+                        {
+                            clearAllFemaleModels();
+                            FemaleFall.SetActive(true);
+                            ColorGenerate();
+                        }
+                        // warm relaxed
+                        else if (seasonDropdown.value == 1 || seasonDropdown.value == 2)
+                        {
+                            clearAllFemaleModels();
+                            FemaleWarmRelaxed.SetActive(true);
+                            ColorGenerate();
+                        }
+                        
+                    }
+                }
+                // Street Style
+                else if (i == 5)
+                {
+                    // Female
+                    if (genderSelect.value == 1)
+                    {
+                            clearAllFemaleModels();
+                            FeminineStreetStyle.SetActive(true);
+                            nakedFemaleModel.SetActive(false);
+                            ColorGenerate();
+                    }
+
+                }
+                // Chic
+                else if (i == 6)
+                {
+                    // Female
+                    if (genderSelect.value == 1)
+                    {
+                        //Warm
+                        if (seasonDropdown.value == 1 || seasonDropdown.value == 2)
+                        {
+                            clearAllFemaleModels();
+                            FemaleWarmChic.SetActive(true);
+                            nakedFemaleModel.SetActive(false);
+                            ColorGenerate();
+                        }
                     }
                 }
             }
@@ -214,6 +272,9 @@ public class FashionGenerate : MonoBehaviour
         TrendySummerFemale.SetActive(false);
         ClassicFemaleModel.SetActive(false);
         FemaleFall.SetActive(false);
+        FeminineStreetStyle.SetActive(false);
+        FemaleWarmChic.SetActive(false);
+        FemaleWarmRelaxed.SetActive(false);
     }
     public void clearAllMaleModels()
     {
@@ -221,6 +282,7 @@ public class FashionGenerate : MonoBehaviour
         TrendyMale.SetActive(false);
         outfitModel.SetActive(false);
         RelaxedMaleModel.SetActive(false);
+        MaleCold.SetActive(false);
     }
 
     Color[] classicColors = new Color[] { new Color32(144, 20, 20, 255), new Color32(146, 146, 146, 255), new Color32(0, 0, 0, 255), new Color32(11, 18, 65, 255), new Color32(101, 105, 133, 255) };
