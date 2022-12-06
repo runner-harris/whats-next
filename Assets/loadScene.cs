@@ -22,6 +22,10 @@ public class loadScene : MonoBehaviour
         SceneManager.LoadScene("Menu Screen");
     }
 
+    public void creditsScene() {
+        SceneManager.LoadScene("Credits");
+    }
+
     // Update is called once per frame
     void Update()
     {
