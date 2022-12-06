@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{9D9E3FC6-F358-67E4-92AD-ED6020B636D2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FashionGenerate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/galleryOpen.cs">
     <Files>
       <File FileName="Assets/loadScene.cs" Line="10" Column="6" />
-      <File FileName="Assets/ColorSelect.cs" Line="82" Column="10" />
-      <File FileName="Assets/FashionGenerate.cs" Line="40" Column="6" />
+      <File FileName="Assets/ColorSelect.cs" />
+      <File FileName="Assets/FashionGenerate.cs" Line="323" Column="25" />
+      <File FileName="Assets/rotator.cs" Line="17" Column="52" />
+      <File FileName="Assets/constantrotate.cs" />
+      <File FileName="Assets/saveStyle.cs" Line="15" Column="1" />
+      <File FileName="Assets/galleryOpen.cs" Line="7" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="whats-next" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="FashionGenerate.cs" selected="True" />
+              <Node name="galleryOpen.cs" selected="True" />
             </Node>
           </Node>
         </State>

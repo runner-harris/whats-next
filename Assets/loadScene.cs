@@ -11,6 +11,9 @@ public class loadScene : MonoBehaviour
 
     public void galleryScene()
     {
+        for (int i = 0; i < SaveStyle.savedStyles.Count; i++) {
+            SaveStyle.savedStyles[i].SetActive(false);
+        }
         SceneManager.LoadScene("Gallery");
     }
 

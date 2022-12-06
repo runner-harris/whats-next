@@ -125,8 +125,8 @@ public class FashionGenerate : MonoBehaviour
                 styleChoices += styleChoicesArray[i] + "\n";
             }
         }
-        //backgroundInfoTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
-         //   + " Your style preferences are: " + "\n" + styleChoices;
+        backgroundInfoTextHolder.text = "Your style identity is " + gender + ". You're shopping for " + season + " outfits."
+            + " Your style preferences are: " + "\n" + styleChoices;
 
         getStyle();
         //shirt.GetComponent<MeshRenderer>().materials[0].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
@@ -213,6 +213,7 @@ public class FashionGenerate : MonoBehaviour
         nakedFemaleModel.SetActive(false);
         TrendySummerFemale.SetActive(false);
         ClassicFemaleModel.SetActive(false);
+        FemaleFall.SetActive(false);
     }
     public void clearAllMaleModels()
     {
@@ -307,18 +308,21 @@ public class FashionGenerate : MonoBehaviour
     {
         for (int i = 0; i < allModels.Length; i++) {
             if (allModels[i].activeSelf) {
-                
-                savedStyles.Add(allModels[i]);
                 DontDestroyOnLoad(allModels[i]);
+                SaveStyle.addStyle(allModels[i]);
+
+                //savedStyles.Add(allModels[i]);
+                //DontDestroyOnLoad(allModels[i]);
                 //saveCount = saveCount + 1;
             }
         }
+       
     }
 
     public void loadSavedStyles() {
         Vector3 position = loader.transform.position;
         Quaternion rotation = new Quaternion(0, 0, 0, 0);
-        Instantiate(savedStyles[0], position, rotation);
+        //Instantiate(savedStyles[0], position, rotation);
     }
 
     public void shareStyle()
